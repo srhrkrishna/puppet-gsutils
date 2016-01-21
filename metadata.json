@@ -1,0 +1,18 @@
+{
+  "name": "sree-gsutil",
+  "version": "0.1.0",
+  "author": "sree",
+  "summary": "Installs gsutil",
+  "license": "Apache 2.0",
+  "source": "https://github.com/srhrkrishna/puppet-gsutils",
+  "project_page": "https://github.com/srhrkrishna/puppet-gsutils",
+  "issues_url": "https://github.com/srhrkrishna/puppet-gsutils/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {
+      "name": "camptocamp/archive",
+      "version_requirement": ">= 0.8.1"
+    }
+  ]
+}
+
