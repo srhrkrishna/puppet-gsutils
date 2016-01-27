@@ -1,8 +1,8 @@
 {
-  "name": "sree-gsutil",
-  "version": "0.1.0",
-  "author": "sree",
-  "summary": "Installs gsutil",
+  "name": "gobunatarajan-google_gsutil",
+  "version": "1.0.1.0",
+  "author": "GobuNatarajan",
+  "summary": "Installs the gsutil package, which is a command prompt utility to access the google cloud",
   "license": "Apache 2.0",
   "source": "https://github.com/srhrkrishna/puppet-gsutils",
   "project_page": "https://github.com/srhrkrishna/puppet-gsutils",
