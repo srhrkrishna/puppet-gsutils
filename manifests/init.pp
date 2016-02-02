@@ -29,7 +29,19 @@ class gsutil(
     path => ['/bin', '/sbin', '/usr/bin', '/usr/sbin'],
     creates => ["${install_dir}/gsutil", '/etc/profile.d/custompath.sh'],
     cwd => "${install_dir}/gsutil",
-    command => 'sudo echo pathmunge /opt/gsutil > ~/custompath.sh && sudo mv ~/custompath.sh /etc/profile.d/ && sudo chmod +x /etc/profile.d/custompath.sh && . /etc/profile',
+  #  command => 'sudo echo pathmunge /opt/gsutil > ~/custompath.sh && sudo mv ~/custompath.sh /etc/profile.d/ && sudo chmod +x /etc/profile.d/custompath.sh && . /etc/profile',
+#     command => 'source /etc/profile.d/install_gsutil.sh',
     require => Archive::Extract['gsutil'],
   }
+
+# The below code will set the gsutil path inside the PATH env variable.
+file { "/etc/profile.d/install_gsutil.sh":
+  content => "export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/gsutil",
+  mode    => 755
+}-> exec { 'set gsutil':
+    provider => shell,
+    command => "source /etc/profile.d/install_gsutil.sh",
+    logoutput => on_failure,
+  }
+
 }
