@@ -1,14 +1,34 @@
 {
   "name": "GobuNatarajan-gsutil",
-  "version": "0.9.0",
+  "version": "0.9.3",
   "author": "GobuNatarajan",
-  "summary": "Installs gsutil package, A command prompt utility to access the google cloud",
-  "license": "Apache 2.0",
+  "summary": "Installs gsutil package, A command prompt utility to access the google cloud storage",
+  "license": "Apache-2.0",
   "source": "https://github.com/srhrkrishna/puppet-gsutils",
   "project_page": "https://github.com/srhrkrishna/puppet-gsutils",
   "issues_url": "https://github.com/srhrkrishna/puppet-gsutils/issues",
+  "tags": [
+    "gsutil",
+    "gcloud",
+    "google",
+    "cloud",
+    "storage"
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.8.4 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    }
+  ],
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
     {"name":"camptocamp/archive","version_requirement":">= 0.8.1"}
   ]
 }
