@@ -1,6 +1,6 @@
 {
   "name": "GobuNatarajan-gsutil",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "author": "GobuNatarajan",
   "summary": "Installs gsutil package, A command prompt utility to access the google cloud storage",
   "license": "Apache-2.0",
@@ -22,10 +22,7 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "6"
-      ]
+      "operatingsystem": "CentOS, Ubuntu, Debian"
     }
   ],
   "dependencies": [

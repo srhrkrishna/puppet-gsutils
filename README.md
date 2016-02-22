@@ -33,10 +33,10 @@
   ```
 
 ## Limitations
-Tested on CentOS6. To be tested on other flavors.
+Tested on CentOS,Ubuntu and Debian. To be tested on other flavors.
 
 ## Authors
-This module is based on work by Gobu Natarajan, Sree Hari Krishna and Ram Vittal.
+This module is based on work by Gobu Natarajan, Sree Hari Krishna, Pradeep Kumar and Ram Vittal.
 
 ## Development
 Interested contributors can touch base with Gobu (gobu.natarajan@gmail.com) or Ram Vittal (ramvittal@gmail.com)
