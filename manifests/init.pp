@@ -46,7 +46,7 @@ class gsutil(
 
 # The below code will set the gsutil path inside the PATH env variable.
 file { '/etc/profile.d/install_gsutil.sh':
-  content => 'export PATH=/usr/local/bin:/usr/bin:/opt/gsutil',
+  content => 'export PATH=$PATH:/usr/local/bin:/usr/bin:/opt/gsutil',
   mode    => '0755'
 }-> exec { 'set gsutil':
     provider  => shell,
